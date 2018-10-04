@@ -1,7 +1,9 @@
 def turn_count(board)
   counter = 0
   board.each do |turns|
-    turns.strip == "X" || turns.strip == "O" ? counter += 1
+    if turns.strip == "X" || turns.strip == "O"
+      counter += 1
+    end
   end
   return counter
 end
