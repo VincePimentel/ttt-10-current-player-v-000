@@ -1,7 +1,11 @@
 def turn_count(board)
-  step = 0
-  board.each do |turns|
-    step += 1
+  count = 0
+  loop do
+    if board[count] == "X" | board[count] == "O"
+      step = 0
+      board.each do |turns|
+        step += 1
+      end
   end
   return step
 end
