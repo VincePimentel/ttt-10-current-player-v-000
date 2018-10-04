@@ -4,6 +4,6 @@ def turn_count(board)
     if turns.strip == "X" || turns.strip == "O"
       counter += 1
     end
-    return counter
   end
+  return counter
 end
